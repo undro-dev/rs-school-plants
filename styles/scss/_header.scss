@@ -1,0 +1,42 @@
+.header {
+	background-color: $green-bg;
+	font-family: $main-font;
+	font-size: 1rem;
+}
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	column-gap: 1px;
+	&__txt {
+		line-height: 21px;
+		color: #000000;
+	}
+
+	&__img {
+		background-image: url("../../assets/icons/logo.svg");
+		background-size: cover;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.menu {
+	display: flex;
+	list-style-type: none;
+	column-gap: 46px;
+	&__list {
+		text-decoration: none;
+		font-weight: 700;
+		line-height: 50px;
+		color: #010201;
+		transition: all 0.3s;
+	}
+	&__list:hover {
+		color: $orange-txt;
+	}
+}

@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+.header {
+  background-color: #edf2ec;
+  font-family: "Inika";
+  font-size: 1rem;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1px;
+          column-gap: 1px;
+}
+
+.logo__txt {
+  line-height: 21px;
+  color: #000000;
+}
+
+.logo__img {
+  background-image: url("../../assets/icons/logo.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-column-gap: 46px;
+          column-gap: 46px;
+}
+
+.menu__list {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 50px;
+  color: #010201;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__list:hover {
+  color: #e06733;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

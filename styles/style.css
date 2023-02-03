@@ -15,6 +15,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 117px;
 }
 
 .logo {
@@ -59,8 +60,107 @@
   color: #e06733;
 }
 
+.burger {
+  position: relative;
+  width: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.burger__item {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border: 2px solid #717171;
+  background-color: #717171;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.burger__item:nth-child(1) {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+.burger__item:nth-child(2) {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.burger__item:nth-child(4) {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.header.open .burger__item:nth-child(2),
+.header.open .burger__item:nth-child(3) {
+  opacity: 0;
+}
+
+.header.open .burger__item:nth-child(1) {
+  -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
+}
+
+.header.open .burger__item:nth-child(4) {
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+@media (max-width: 655px) {
+  .header-container {
+    height: 96px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    right: -100%;
+    padding-top: 96px;
+    top: 96px;
+    margin: 0;
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #edf2ec;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  .header.open .menu {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 111px;
+  padding-right: 109px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

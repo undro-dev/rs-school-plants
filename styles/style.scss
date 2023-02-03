@@ -2,7 +2,19 @@
 @import "./scss/variables";
 @import "./scss/header";
 
+html {
+	box-sizing: border-box;
+}
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
+	padding-left: 111px;
+	padding-right: 109px;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 }

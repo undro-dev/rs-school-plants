@@ -1,6 +1,6 @@
 .header {
 	background-color: $green-bg;
-	font-family: $main-font;
+	font-family: $main-font-1;
 	font-size: 1rem;
 }
 .header-container {
@@ -32,13 +32,12 @@
 	column-gap: 46px;
 	&__list {
 		text-decoration: none;
-		font-weight: 700;
 		line-height: 50px;
 		color: #010201;
 		transition: all 0.3s;
 	}
 	&__list:hover {
-		color: $orange-txt;
+		color: $orange;
 	}
 }
 
@@ -77,6 +76,11 @@
 }
 .header.open .burger__item:nth-child(4) {
 	transform: translateY(0) rotate(-45deg);
+}
+@media (max-width: 768px) {
+	.menu__list {
+		font-weight: 700;
+	}
 }
 
 @media (max-width: 655px) {

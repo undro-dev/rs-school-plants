@@ -1,0 +1,239 @@
+.price__container {
+	padding-top: 38px;
+	padding-bottom: 115px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.price-variant {
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 60px;
+		font-family: $main-font-2;
+		font-weight: 700;
+		line-height: 48px;
+		font-size: 2.5rem;
+	}
+	&__accordion {
+		width: 332px;
+		border: 1px solid #e3e1d5;
+		border-radius: 20px;
+		padding: 34px 41px;
+	}
+}
+.price-variant__btn:nth-child(1),
+.price-variant__btn:nth-child(2) {
+	margin-bottom: 32px;
+}
+
+.price-variant__btn {
+	width: 250px;
+	overflow: hidden;
+	height: 50px;
+	background: $green-bg;
+	border-radius: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding: 16px 40px 16px 40px;
+	transition: all 0.7s;
+
+	&__btn-title {
+		font-family: $main-font-2;
+		font-weight: 700;
+		line-height: 20px;
+		font-size: 1.25rem;
+	}
+
+	.arrow-down {
+		background: #d9d9d9;
+		width: 16px;
+		height: 16px;
+		border-radius: 100%;
+		border: none;
+		background-image: url("../../assets/icons/arrow-down.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+}
+.price-variant__btn-control {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	font-family: $main-font-2;
+	margin-top: 18px;
+	&__about {
+		font-weight: 300;
+		font-size: 0.6rem;
+		line-height: 10px;
+		color: $grey1;
+		margin-bottom: 6px;
+		margin-top: 0;
+	}
+	&__price {
+		color: $orange;
+		font-weight: 700;
+		font-size: 1rem;
+		line-height: 20px;
+		margin-top: 0;
+		margin-bottom: 12px;
+		span {
+			color: #000000;
+			font-weight: 400;
+		}
+	}
+	&__btn {
+		width: 86px;
+		background: #ffffff;
+		border-radius: 10px;
+		border: none;
+
+		font-family: $main-font-2;
+		font-weight: 700;
+		font-size: 0.875rem;
+		line-height: 20px;
+		color: $grey1;
+		text-transform: capitalize;
+	}
+}
+
+.price-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	row-gap: 38px;
+	&__title {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-family: $main-font-2;
+		font-weight: 700;
+		line-height: 50px;
+		font-size: 2.5rem;
+		text-align: right;
+	}
+	&__title span {
+		color: $green;
+	}
+	&__btn {
+		width: 162px;
+		height: 50px;
+		border: 1px solid $orange;
+		border-radius: 5px;
+		background: none;
+		cursor: pointer;
+
+		font-family: $main-font-1;
+		font-weight: 700;
+		font-size: 1.25rem;
+		line-height: 26px;
+		text-align: center;
+		color: $orange;
+
+		transition: all 0.4s;
+	}
+	&__btn:hover {
+		background: $orange;
+		color: #ffffff;
+	}
+
+	&__img {
+		background-image: url("../../assets/img/leafs_1.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 152px;
+		height: 174px;
+	}
+}
+
+@media (max-width: 768px) {
+	.price__container {
+		padding-top: 40px;
+		padding-bottom: 88px;
+	}
+	.price-variant {
+		&__title {
+			margin-top: 0;
+			margin-bottom: 50px;
+			line-height: 42px;
+			font-size: 2.1rem;
+		}
+	}
+	.price-contact {
+		row-gap: 0;
+		&__title {
+			margin-top: 99px;
+			margin-bottom: 21px;
+			line-height: 35px;
+			font-size: 1.5rem;
+		}
+
+		&__btn {
+			margin-bottom: 34px;
+		}
+	}
+}
+
+@media (max-width: 655px) {
+	.price__container {
+		padding-top: 25px;
+		padding-bottom: 40px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.price-variant {
+		&__title {
+			margin-bottom: 40px;
+			line-height: 30px;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		&__accordion {
+			width: 224px;
+			padding: 28px 22px;
+		}
+	}
+	.price-variant__btn:nth-child(1),
+	.price-variant__btn:nth-child(2) {
+		margin-bottom: 13px;
+	}
+
+	.price-variant__btn {
+		width: 180px;
+		padding: 15px 40px 15px 30px;
+
+		&__btn-title {
+			line-height: 20px;
+			font-size: 0.9rem;
+		}
+	}
+	.price-contact {
+		align-items: center;
+		&__title {
+			margin-top: 19px;
+			margin-bottom: 14px;
+			line-height: 35px;
+			font-size: 1.25rem;
+			text-align: center;
+		}
+		&__btn {
+			width: 121px;
+			height: 35px;
+			font-size: 0.9rem;
+			line-height: 20px;
+			margin-bottom: 0;
+		}
+
+		&__img {
+			display: none;
+		}
+	}
+}

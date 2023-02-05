@@ -1,37 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Plants</title>
-		<link rel="stylesheet" href="./styles/normalize.css" />
-		<link rel="stylesheet" href="./styles/style.css" />
-	</head>
-	<body>
-		<header class="header">
-			<div class="container header-container">
-				<div class="logo">
-					<div class="logo__img"></div>
-					<span class="logo__txt">Plants</span>
-				</div>
-				<nav>
-					<ul class="menu">
-						<li ><a class="menu__list" href="#">Home</a></li>
-						<li ><a class="menu__list" href="#">About us</a></li>
-						<li ><a class="menu__list" href="#">Service</a></li>
-						<li ><a class="menu__list" href="#">Price</a></li>
-						<li ><a class="menu__list" href="#">Contacts</a></li>
-					</ul>
-				</nav>
-				<button class="burger">
-					<div class="burger__item"></div>
-					<div class="burger__item"></div>
-					<div class="burger__item"></div>
-					<div class="burger__item"></div>
-				</button>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Plants</title>
+	<link rel="stylesheet" href="./styles/normalize.css" />
+	<link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-container">
+			<div class="logo">
+				<div class="logo__img"></div>
+				<span class="logo__txt">Plants</span>
 			</div>
-		</header>
-		<script src='./script.js'></script>
+			<nav>
+				<ul class="menu">
+					<li><a class="menu__list" href="#welcome">Home</a></li>
+					<li><a class="menu__list" href="#about">About us</a></li>
+					<li><a class="menu__list" href="#service">Service</a></li>
+					<li><a class="menu__list" href="#price">Price</a></li>
+					<li><a class="menu__list" href="#contact">Contacts</a></li>
+				</ul>
+			</nav>
+			<button class="burger">
+				<div class="burger__item"></div>
+				<div class="burger__item"></div>
+				<div class="burger__item"></div>
+				<div class="burger__item"></div>
+			</button>
+		</div>
+	</header>
+	<section id='welcome'>
+		<div class="container welcome__container">
+			<div class="welcome-img"></div>
+
+			<div class="welcome-description">
+				<h1 class='welcome-description__title'>We grow <span>plants</span> and give you oxygen</h1>
+				<p class='welcome-description__txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+					the industry's standard dummy text ever since the 1500s.</p>
+				<button class='welcome-description__btn'>Learn more</button>
+			</div>
+		</div>
+	</section>
+	<section id='about'>
+		<div class="container about__container">
+			<div class="about-description">
+				<h2 class='about-description__title'>We are <span>professional experienced</span> gardeners</h2>
+				<p class='about-description__txt'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+					the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+					type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+					unchanged. </p>
+			</div>
+			<div class="about-img"></div>
+		</div>
+	</section>
+	<section id='service'>
+		<div class="container service__container">
+			<div class="service-header">
+				<div class="service-header__title">Service and our <br>projects</div>
+				<div class="service-header__panel">
+					<button data-name="Garden care" class='service-header__btn'>Gardens</button>
+					<button data-name="Lawn care" class='service-header__btn'>Lawn</button>
+					<button data-name="Planting" class='service-header__btn'>Planting</button>
+				</div>
+			</div>
+			<div class="service-cards"></div>
+		</div>
+	</section>
+	<section id='price'>
+		<div class="container price__container">
+
+			<div class="price-variant">
+				<h2 class='price-variant__title'>Prices</h2>
+				<div class="price-variant__accordion">
+					<div class="price-variant__btn">
+						<div class="price-variant__btn-control">
+							<p class='price-variant__btn-title'>Basics</p>
+							<button class='arrow-down'></button>
+						</div>
+						<div class="content">
+							<p class='content__about'>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+							<p class='content__price'>$15 <span class='content__time'>/ per hour</span></p>
+							<button class='content__btn'>order</button>
+						</div>
+					</div>
+					<div class="price-variant__btn">
+						<div class="price-variant__btn-control">
+							<p class='price-variant__btn-title'>Standard</p>
+							<button class='arrow-down'></button>
+						</div>
+						<div class="content">
+							<p class='content__about'>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+							<p class='content__price'>$25 <span class='content__time'>/ per hour</span></p>
+							<button class='content__btn'>order</button>
+						</div>
+					</div>
+					<div class="price-variant__btn">
+						<div class="price-variant__btn-control">
+							<p class='price-variant__btn-title'>Pro care</p>
+							<button class='arrow-down'></button>
+						</div>
+						<div class="content">
+							<p class='content__about'>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+							<p class='content__price'>$35 <span class='content__time'>/ per hour</span></p>
+							<button class='content__btn'>order</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="price-contact">
+				<p class='price-contact__title'>Our best <span>gardeners</span> are <br> ready to help you</p>
+				<button class='price-contact__btn'>Contact us</button>
+				<div class="price-contact__img"></div>
+			</div>
+		</div>
+	</section>
+	<section id='contact'>
+		<div class="container contact__container">
+			<h2 class='contact__title'>Contact us</h2>
+			<div class="contact__body">
+				<div class="contact__body__img"></div>
+				<div class="contact__body-select">
+					<div id='select'></div>
+					<div id='selected-list' class="selected-list"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container footer__container">
+			<div class="footer__git">
+				<span>©</span><span>2023</span><a href="#">github</a>
+			</div>
+			<div class="footer__school">Rolling Scopes School</div>
+			<nav class="">
+				<ul class='footer__social'>
+					<li>
+						<a class='footer__link' href="#">
+							<div class='footer__img-instagram'></div>
+						</a>
+					</li>
+					<li>
+						<a class='footer__link' href="#">
+							<div class='footer__img-facebook'></div>
+						</a>
+					</li>
+					<li>
+						<a class='footer__link' href="#">
+							<div class='footer__img-twitter'></div>
+						</a>
+					</li>
+					<li>
+						<a class='footer__link' href="#">
+							<div class='footer__img-pinterest'></div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+
+	<script type='module' src='./script.js'></script>
+
 	<body>
+
 </html>

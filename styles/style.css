@@ -32,7 +32,7 @@
 }
 
 .logo__img {
-  background-image: url("../../assets/icons/logo.svg");
+  background-image: url("./../assets/icons/logo.svg");
   background-size: cover;
   width: 20px;
   height: 20px;
@@ -167,7 +167,7 @@
 }
 
 .welcome-img {
-  background-image: url("../../assets/img/leafs.png");
+  background-image: url("./../assets/img/leafs.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 448px;
@@ -327,7 +327,7 @@
 }
 
 .about-img {
-  background-image: url("../../assets/img/houseplant 1.png");
+  background-image: url("./../assets/img/houseplant 1.png");
   width: 464px;
   height: 479px;
   background-size: cover;
@@ -656,7 +656,7 @@
   height: 16px;
   border-radius: 100%;
   border: none;
-  background-image: url("../../assets/icons/arrow-down.svg");
+  background-image: url("./../assets/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -774,7 +774,7 @@
 }
 
 .price-contact__img {
-  background-image: url("../../assets/img/leafs_1.png");
+  background-image: url("./../assets/img/leafs_1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 152px;
@@ -906,7 +906,7 @@
   position: absolute;
   top: -85px;
   left: 0;
-  background-image: url("../../assets/img/contact_woman.png");
+  background-image: url("./../assets/img/contact_woman.png");
   background-size: cover;
   width: 400px;
   height: 496px;
@@ -1022,7 +1022,7 @@
 }
 
 .select__input-btn {
-  background-image: url("../../assets/icons/arrow_down_1.svg");
+  background-image: url("./../assets/icons/arrow_down_1.svg");
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -1219,19 +1219,19 @@
 }
 
 .footer__img-instagram {
-  background-image: url("../../assets/icons/footer/instagram.svg");
+  background-image: url("./../assets/icons/footer/instagram.svg");
 }
 
 .footer__img-facebook {
-  background-image: url("../../assets/icons/footer/fb.svg");
+  background-image: url("./../assets/icons/footer/fb.svg");
 }
 
 .footer__img-twitter {
-  background-image: url("../../assets/icons/footer/tw.svg");
+  background-image: url("./../assets/icons/footer/tw.svg");
 }
 
 .footer__img-pinterest {
-  background-image: url("../../assets/icons/footer/pinterest.svg");
+  background-image: url("./../assets/icons/footer/pinterest.svg");
 }
 
 @media (max-width: 800px) {

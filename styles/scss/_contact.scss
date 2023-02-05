@@ -24,7 +24,7 @@
 		position: absolute;
 		top: -85px;
 		left: 0;
-		background-image: url("../../assets/img/contact_woman.png");
+		background-image: url("./../assets/img/contact_woman.png");
 		background-size: cover;
 		width: 400px;
 		height: 496px;
@@ -114,7 +114,7 @@
 	color: $grey1;
 }
 .select__input-btn {
-	background-image: url("../../assets/icons/arrow_down_1.svg");
+	background-image: url("./../assets/icons/arrow_down_1.svg");
 	width: 16px;
 	height: 16px;
 	background-repeat: no-repeat;

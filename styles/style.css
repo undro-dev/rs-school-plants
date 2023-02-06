@@ -45,6 +45,8 @@
   list-style-type: none;
   -webkit-column-gap: 46px;
           column-gap: 46px;
+  padding: 0;
+  margin: 0;
 }
 
 .menu__list {
@@ -245,8 +247,8 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 39px;
+    padding-bottom: 71px;
   }
   .welcome-img {
     width: 280px;
@@ -257,6 +259,11 @@
   }
   .welcome-description__title {
     font-size: 2.1rem;
+    margin-bottom: 30px;
+  }
+  .welcome-description__txt {
+    line-height: 25px;
+    font-size: 1rem;
     margin-bottom: 30px;
   }
 }
@@ -320,6 +327,7 @@
 }
 
 .about-description__txt {
+  font-family: "Inter", sans-serif;
   margin-top: 0;
   font-size: 1.25rem;
   line-height: 30px;
@@ -361,6 +369,7 @@
   }
   .about-description__txt {
     margin-bottom: 40px;
+    text-align: start;
   }
   .about-img {
     width: 250px;
@@ -537,9 +546,11 @@
   .service-header__title {
     line-height: 46px;
     font-size: 2.1rem;
-    margin-right: 0;
+    margin: 0;
   }
   .service-cards {
+    -webkit-column-gap: normal;
+            column-gap: normal;
     grid-row-gap: 38px;
   }
   .service-cards__item {
@@ -547,6 +558,7 @@
   }
   .service-cards__img {
     max-width: 281px;
+    height: 350px;
   }
 }
 
@@ -643,7 +655,7 @@
   transition: all 0.7s;
 }
 
-.price-variant__btn__btn-title {
+.price-variant__btn .price-variant__btn-title {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 20px;
@@ -710,12 +722,17 @@
   font-weight: 400;
 }
 
+.content a {
+  text-decoration: none;
+}
+
 .content__btn {
   width: 86px;
   background: #ffffff;
   border-radius: 10px;
   border: none;
   font-family: "Inter", sans-serif;
+  text-align: center;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 20px;
@@ -836,7 +853,7 @@
     width: 180px;
     padding: 15px 40px 15px 30px;
   }
-  .price-variant__btn__btn-title {
+  .price-variant__btn .price-variant__btn-title {
     line-height: 20px;
     font-size: 0.9rem;
   }
@@ -1014,7 +1031,7 @@
 }
 
 .select__input-title {
-  font-family: #717171;
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   line-height: 40px;
   letter-spacing: 0.05em;
@@ -1050,6 +1067,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 61px;
 }
 
 .selected-list__item {
@@ -1070,6 +1088,7 @@
 }
 
 .selected-list__item-value {
+  text-decoration: none;
   color: #717171;
 }
 
@@ -1114,7 +1133,6 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    row-gap: 250px;
   }
   .contact__body__img {
     position: static;
@@ -1126,6 +1144,12 @@
 @media (max-width: 768px) {
   #contact {
     padding-top: 40px;
+  }
+  .select__input {
+    margin-bottom: 250px;
+  }
+  .select__input.selected {
+    margin-bottom: 0;
   }
   .contact__title {
     margin-top: 0;
@@ -1147,6 +1171,9 @@
     margin-top: 0;
     padding: 23px 36px 23px 36px;
     margin-bottom: 33px;
+  }
+  .selected-list.open {
+    margin-top: 0;
   }
   .select.open {
     margin-bottom: 49px;
@@ -1186,6 +1213,11 @@
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.footer__school {
+  text-decoration: none;
+  color: #000000;
 }
 
 .footer__git {
@@ -1267,7 +1299,7 @@
     row-gap: 8px;
   }
   .footer__git {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
 }
 

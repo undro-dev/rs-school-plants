@@ -55,13 +55,29 @@ function toCreateCards(db) {
 	CARDS_WRAPPER.innerHTML = htmCatalog;
 }
 
+function toCheckCountActiveBtn() {
+	let count = 0;
+	SERVICE_BUTTONS.forEach(btn =>
+		btn.classList.contains('active') ? count++ : null
+	);
+
+	return count;
+}
+
 SERVICE_BUTTONS.forEach(btn =>
 	btn.addEventListener('click', () => {
+		btn.classList.toggle('active');
+		let count = toCheckCountActiveBtn();
+
+		if (count === 3) {
+			btn.classList.remove('active');
+			return false;
+		}
+
 		DB_SERVICE = DB_SERVICE.map(obj =>
 			btn.dataset.name == obj.name ? { ...obj, blur: !obj.blur } : obj
 		);
 
-		btn.classList.toggle('active');
 		toCreateCards(DB_SERVICE);
 	})
 );

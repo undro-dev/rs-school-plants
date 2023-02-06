@@ -10,7 +10,10 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
-
+.footer__school {
+	text-decoration: none;
+	color: #000000;
+}
 .footer__git {
 	display: flex;
 	column-gap: 20px;
@@ -72,6 +75,6 @@
 		row-gap: 8px;
 	}
 	.footer__git {
-		margin-bottom: 16px;
+		margin-bottom: 8px;
 	}
 }

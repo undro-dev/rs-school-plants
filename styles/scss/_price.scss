@@ -40,7 +40,7 @@
 	padding: 16px 40px 16px 40px;
 	transition: all 0.7s;
 
-	&__btn-title {
+	.price-variant__btn-title {
 		font-family: $main-font-2;
 		font-weight: 700;
 		line-height: 20px;
@@ -91,6 +91,9 @@
 			font-weight: 400;
 		}
 	}
+	a {
+		text-decoration: none;
+	}
 	&__btn {
 		width: 86px;
 		background: #ffffff;
@@ -98,6 +101,7 @@
 		border: none;
 
 		font-family: $main-font-2;
+		text-align: center;
 		font-weight: 700;
 		font-size: 0.875rem;
 		line-height: 20px;
@@ -210,7 +214,7 @@
 		width: 180px;
 		padding: 15px 40px 15px 30px;
 
-		&__btn-title {
+		.price-variant__btn-title {
 			line-height: 20px;
 			font-size: 0.9rem;
 		}

@@ -18,10 +18,10 @@ const getTemplateSelectedItem = ({ value, phone, address }) => {
 						</div>
 						<div class="selected-list__item">
 							<span class="selected-list__item-id">Phone:</span>
-							<span class="selected-list__item-value">${phone}</span>
+							<a class="selected-list__item-value" href="tel:${phone}">${phone}</a>
 						</div>
 						<div class="selected-list__item">
-							<span class="selected-list__item-id">Office adress:</span>
+							<span class="selected-list__item-id">Office address:</span>
 							<span class="selected-list__item-value">${address}</span>
 						</div>
 						<button class='selected-list__item-btn'>Call us</button>`;

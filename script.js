@@ -1,26 +1,10 @@
 import { toCreateCards, DB_SERVICE } from './js/service.js';
-import toggleAccordion from './js/price.js';
 import { Select } from './js/contact.js';
+import toggleAccordion from './js/price.js';
 
 const BURGER_BTN = document.querySelector('.burger');
 const MENU_LINK = document.querySelectorAll('.menu__list');
 const PRICE_BTN = document.querySelectorAll('.arrow-down');
-
-document.addEventListener('DOMContentLoaded', () => {
-	toCreateCards(DB_SERVICE);
-});
-
-BURGER_BTN.addEventListener('click', () =>
-	document.querySelector('.header').classList.toggle('open')
-);
-
-MENU_LINK.forEach(el => {
-	el.addEventListener('click', () =>
-		document.querySelector('.header').classList.toggle('open')
-	);
-});
-
-PRICE_BTN.forEach(element => toggleAccordion(element));
 
 const select = new Select('#select', '#selected-list', {
 	placeholder: 'City',
@@ -54,4 +38,21 @@ const select = new Select('#select', '#selected-list', {
 		console.log(item);
 	},
 });
-window.s = select;
+
+document.addEventListener('DOMContentLoaded', () => {
+	toCreateCards(DB_SERVICE);
+
+	BURGER_BTN.addEventListener('click', () =>
+		document.querySelector('.header').classList.toggle('open')
+	);
+
+	MENU_LINK.forEach(el => {
+		el.addEventListener('click', () =>
+			document.querySelector('.header').classList.toggle('open')
+		);
+	});
+
+	PRICE_BTN.forEach(element => toggleAccordion(element));
+
+	window.s = select;
+});
